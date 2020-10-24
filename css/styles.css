@@ -13,7 +13,7 @@ body {
 
 header {
     height: 350px;
-    background-image: url(../_images/devicesgrey.png);
+    background-image: url(../images/devicesgrey.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -60,7 +60,7 @@ ul {
 }
 
 .wrapper{
-    background-image: url(../_images/geometric.jpg);
+    background-image: url(../images/geometric.jpg);
     padding-bottom: 40px;
 }
 
