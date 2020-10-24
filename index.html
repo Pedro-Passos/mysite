@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedro Passos</title>
+    <link type="text/css" rel="stylesheet" href="_css/normalize.css" />
+    <link href="https://fonts.googleapis.com/css?family=Audiowide%7CMontserrat" rel="stylesheet">
+    <link rel="stylesheet" href="_css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+          $(document).ready(function(){
+              // Add smooth scrolling to all links
+              $("a").on('click', function(event) {
+                  // Make sure this.hash has a value before overriding default behavior
+                  if (this.hash !== "") {
+                      // Prevent default anchor click behavior
+                      event.preventDefault();
+                      // Store hash
+                      var hash = this.hash;
+                      // Using jQuery's animate() method to add smooth page scroll
+                      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                      $('html, body').animate({
+                          scrollTop: $(hash).offset().top
+                      }, 800, function(){
+                      // Add hash (#) to URL when done scrolling (default click behavior)
+                      window.location.hash = hash;
+                      });
+                  } // End if
+              });
+          });
+    </script>
+</head>
+<body>
+    <header id="top">
+        <a href="index.html"><img id="logo" src="_images/logo.png" alt="Logo" /></a>
+        <ul id="menu" class="flexitem">
+            <li><a href="#work">Work</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </header>
+    <main>
+        <div class="wrapper">
+            <div class="container section">
+                <img id="me" src="_images/me.png" alt="Picture of Pedro">
+                <p>Hi, and welcome to my page! I'm Pedro an aspiring web developer looking for a position as a Junior Web Developer.</p>
+                <div class="flexitem">
+                    <img id="birkbeck" src="_images/Birkbeck.png" alt="Birkbeck logo">
+                    <p> I have just graduated from Birkbeck University of London with a degree in Web Technologies and currently work in retail while I pursue my goal of becoming a web developer.</p>
+                </div>
+                <br>
+                <div class="flexitem">
+                    <div class="flexcol">
+                        <p>The languages I am currently most comfortable with is Java along with the core HTML/CSS/JavaScript and have a good understanding of PHP, MySQL and Python</p>
+                        <p>I haven't yet settled on a specialization as I would like to keep my options open as I continue to build a strong foundation in some of these technologies and will learn what is needed by my future employer.</p>
+						<p>Until then I will continue to explore both front and backend web development.</p>
+                    </div>
+                    <img id="weblogos" class="imgborder" src="_images/weblogos.png" alt="Web Technologies icons">
+                </div>
+            </div>
+
+            <div id="work" class="container section border">
+                <h2>Work</h2>
+                <hr>
+                <p>Projects will be added soon...</p>
+                <div>
+                    <img class="img" src="_images/1.png" alt="An example of my work">
+                    <img class="img" src="_images/2.png" alt="An example of my work">
+                    <img class="img" src="_images/3.png" alt="An example of my work">
+                </div>
+                <br>
+                <div class="flexitem">
+                    <a href="https://github.com/pedro-passos"><img id="git" class="imgborder" src="_images/github.jpg" alt="Github logo"></a>
+                    <p>You can also view some of my code on Github!</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="about" class="container section light">
+            <h2>About</h2>
+            <hr class="lighthr">
+            <div class="flexitem">
+                <div class="flexcol">
+                    <p>I was born and raised in Johannesburg and then moved to Madeira Island in Potugal where I lived the second half of my life before coming to London where I have been living for the last six years.</p>
+                    <p>I came to London due to lack of opportunities in Madeira and I decided if I was to start over I would do so while chasing a career I was passionate about.</p>
+                    <p>My hobbies are mostly IT related and I enjoy doing courses from places like Lynda or Udemy. It was there that I came across a HTML and CSS course from which my passion for all things web began, shortly after I enrolled at Birkbeck University of London .</p>
+                </div>
+                <img class="imgborder" src="_images/world.png" alt="Map of where I have lived">
+            </div>
+            <p>You can view and download a PDF version of my CV here!</p>
+            <a id="download" href="_downloads/PedroDosPassos.pdf">Download</a>
+        </div>
+
+        <div class="wrapper">
+            <div id="contact" class="container section">
+                <h2>Contact</h2>
+                <hr>
+                <ul>
+                    <li class="flexitem">
+                        <a href="mailto:pedro.passos.pt@gmail.com"><img src="_images/icons/Email-Icon.png" alt="Email icon"></a>
+                        <p>pedro.passos.pt@gmail.com</p>
+                    </li>
+                    <li class="flexitem">
+                        <a href="https://linkedin.com/in/pedropassospt"><img src="_images/icons/Linkedin-Icon.png" alt="LinkedIn icon"></a>
+                        <p>linkedin.com/in/pedropassospt</p>
+                    </li>
+                    <li class="flexitem">
+                        <a href="https://github.com/pedro-passos"><img src="_images/icons/Github-Icon.png" alt="Github icon"></a>
+                        <p>github.com/pedro-passos</p>
+                    </li>
+                    <li class="flexitem">
+                        <a href="https://twitter.com/pedropassospt"><img src="_images/icons/Twitter-Icon.png" alt="Twitter icon"></a>
+                        <p>@pedropassospt</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </main>
+    <footer class="container section">
+        <p><a id="toplink" href="#top">Back to top</a></p>
+        <p id="copy">&copy; Pedro Passos 2017</p>
+    </footer>
+</body>
+</html>

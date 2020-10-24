@@ -1,0 +1,256 @@
+/* CSS for pedropassos.uk
+Please note a normalize.css is also in effect
+Author: Pedro Passos */
+body, html, .main {
+    height: 100%;
+}
+
+body {
+    background-color: #33769F;
+    color: #63707E;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    height: 350px;
+    background-image: url(../_images/devicesgrey.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* Navigation menu related rules */
+#menu {
+    padding: 0 30px;
+    margin: auto;
+    max-width: 1000px;
+    justify-content: space-between;
+    font-family: 'Audiowide', cursive;
+    list-style: none;
+    margin-top: 100px;
+}
+
+#menu li {
+    align-self: center;
+    border: 2px solid  #0087ED;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 5px;
+    width: 15%;
+    min-width: 150px;
+}
+
+#menu li a:link, #menu li a:visited {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+#menu li a:hover {
+    background-color: #63707E
+}
+
+h2 {
+    font-family: 'Audiowide', cursive;
+}
+
+ul {
+    padding: 0;
+}
+
+.wrapper{
+    background-image: url(../_images/geometric.jpg);
+    padding-bottom: 40px;
+}
+
+.container {
+    font-size: 130%;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+
+.flexitem {
+    display: flex;
+}
+
+.flexitem p{
+    align-self: center;
+}
+
+.flexcol {
+    flex-direction: column;
+}
+
+.section {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.border {
+    background-color: #fff;
+    border: 3px solid #0087ED;
+    border-radius: 15px;
+
+}
+
+/* Image related rules including logo */
+img {
+    margin: 20px;
+    max-width: 100%;
+    height: auto;
+    align-self: center;
+    flex: 0 0 auto;
+}
+
+.imgborder {
+    border-radius: 5px;
+}
+
+#logo {
+    max-height: 120px;
+    margin: 40px 20px 20px 40px;
+}
+
+#me {
+    border-radius: 50%;
+}
+
+#birkbeck {
+    border-radius: 5px;
+}
+
+#weblogos {
+    position: relative;
+    bottom: 20px;
+}
+
+hr {
+    width: 60%;
+	  border: 0;
+    height: 2px;
+    background-image: -webkit-linear-gradient(left, #f0f0f0, #0087ED, #f0f0f0);
+    background-image: -moz-linear-gradient(left, #f0f0f0, #0087ED, #f0f0f0);
+    background-image: -ms-linear-gradient(left, #f0f0f0, #0087ED, #f0f0f0);
+    background-image: -o-linear-gradient(left, #f0f0f0, #0087ED, #f0f0f0);
+}
+
+.lighthr {
+    width: 100%;
+    background-image: -webkit-linear-gradient(left, #78B0D2,  #fff, #78B0D2);
+    background-image: -moz-linear-gradient(left, #78B0D2,  #fff, #78B0D2);
+    background-image: -ms-linear-gradient(left, #78B0D2, #fff, #78B0D2);
+    background-image: -o-linear-gradient(left, #78B0D2, #fff, #78B0D2);
+}
+
+/* Colour scheme rules for the About Section */
+#about {
+  color: #78B0D2;
+}
+
+#about h2{
+  color: #fff;
+}
+
+/* Download button in the About section */
+#download {
+    font-family: 'Audiowide', cursive;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #363630;
+    border: 2px solid  #0087ED;
+    border-radius: 5px;
+    width: 20%;
+    margin: 10px;
+    padding: 5px;
+}
+
+#download:hover {
+    background-color: #63707E;
+}
+
+/* Footer related layout rules */
+
+footer {
+    max-width: 100%
+}
+
+#toplink, #toplink:visited {
+    color: #fff;
+    text-decoration: none;
+}
+
+#toplink:hover {
+    text-decoration: underline;
+}
+
+#copy {
+    color: #78B0D2;
+    align-self: flex-end;
+}
+
+/* Tablet specific layout rules */
+@media only screen and (max-width: 800px) {
+    #logo {
+        margin-top: 30px;
+        max-width: 270px;
+    }
+
+    #menu {
+        margin-top: 0px;
+    }
+
+    .container {
+        font-size: 100%;
+    }
+
+    .flexitem {
+        flex-direction: column;
+    }
+
+    #work {
+        margin: auto;
+        padding: 10px;
+        height: 100%;
+    }
+
+    #work img {
+        display: flex;
+        margin: 10px auto;
+    }
+
+    #git {
+        max-width: 250px;
+        margin: auto;
+    }
+
+    #contact h2, #contact li img, #contact li {
+        display: flex;
+        margin: auto;
+    }
+}
+
+/* Phone specific layout rules */
+@media only screen and (max-width: 450px) {
+
+    header {
+        padding: 30px 10px 0px 10px;
+    }
+
+    #logo {
+        display: flex;
+        margin: auto;
+    }
+
+    #menu {
+      margin-top: 40px;
+    }
+
+    #work img {
+        width: 90%;
+    }
+}
